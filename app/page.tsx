@@ -7,6 +7,7 @@ import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ImpactSection from "@/components/ImpactSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import HowIWorkSection from "@/components/HowIWorkSection";
 import ContactSection from "@/components/ContactSection";
 import { motion } from "framer-motion";
@@ -57,6 +58,12 @@ export default function Home() {
 
         <div className="container mx-auto">
           <div className="h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
+        </div>
+
+        <ExperienceSection />
+
+        <div className="container mx-auto">
+          <div className="h-px bg-gradient-to-r from-transparent via-purple-500/20 to-transparent" />
         </div>
 
         <HowIWorkSection />

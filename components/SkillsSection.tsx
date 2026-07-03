@@ -53,6 +53,30 @@ const skills = [
         desc: "Automated FAQ and policy extraction pipelines",
         color: "#4ade80",
     },
+    {
+        icon: "🎯",
+        label: "Content Strategy",
+        desc: "Listing optimization, images, video, VR, and FAQs",
+        color: "#e879f9",
+    },
+    {
+        icon: "🤝",
+        label: "Stakeholder Mgmt",
+        desc: "Coordinating with property partners on listings and pricing",
+        color: "#38bdf8",
+    },
+    {
+        icon: "👥",
+        label: "Team Leadership",
+        desc: "Workflow documentation and training team members",
+        color: "#c084fc",
+    },
+    {
+        icon: "📉",
+        label: "Data Analytics",
+        desc: "Traffic & performance tracking for policy decisions",
+        color: "#fb923c",
+    }
 ];
 
 function calculateDistance(x1: number, y1: number, x2: number, y2: number) {

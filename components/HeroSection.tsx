@@ -210,14 +210,19 @@ export default function HeroSection() {
                             Automation & Process Optimization
                         </motion.p>
 
-                        <motion.p
+                        <motion.div
                             variants={itemVariants}
-                            className="text-sm sm:text-base text-white/60 leading-[1.75] max-w-[500px] mb-12"
+                            className="text-sm sm:text-base text-white/60 leading-[1.75] max-w-[550px] mb-12 flex flex-col gap-4"
                         >
-                            I design scalable automation systems and workflows that reduce
-                            manual effort and improve operational efficiency — turning
-                            hours of work into minutes.
-                        </motion.p>
+                            <p>
+                                I design scalable automation systems and workflows that reduce
+                                manual effort and improve operational efficiency — turning
+                                hours of work into minutes.
+                            </p>
+                            <p>
+                                With 3 years of experience in ecommerce and catalog operations, I've optimized 1,500+ product listings for conversion, reduced manual workload by 85% through AI-driven automation, and managed high-impact seasonal campaigns and stakeholder coordination.
+                            </p>
+                        </motion.div>
 
                         {/* CTA Buttons with enhanced interactions */}
                         <motion.div
