@@ -465,16 +465,19 @@ export default function ProjectsSection() {
     const nextIndex = (activeIndex + 1) % projects.length;
 
     return (
-        <section id="projects" ref={containerRef} className="section-padding relative z-10 overflow-hidden md:min-h-screen flex flex-col justify-center">
-            <motion.div className="absolute top-0 left-0 right-0 bottom-0 pointer-events-none" style={{ y: yBg }}>
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full" style={{ background: "radial-gradient(circle, rgba(108,99,255,0.06) 0%, transparent 70%)" }} />
-            </motion.div>
+        <section id="projects" ref={containerRef} className="section-padding relative z-10 md:min-h-screen flex flex-col justify-center">
+            <div className="absolute top-0 left-0 right-0 bottom-0 pointer-events-none overflow-hidden">
+                <motion.div className="absolute top-0 left-0 right-0 bottom-0" style={{ y: yBg }}>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full" style={{ background: "radial-gradient(circle, rgba(108,99,255,0.06) 0%, transparent 70%)" }} />
+                </motion.div>
+            </div>
 
             <div className="container mx-auto relative z-10">
                 <motion.div ref={headerRef} initial={{ opacity: 0, y: 30 }} animate={headerVisible ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-center mb-16 flex flex-col items-center">
                     <p className="text-sm font-semibold tracking-[0.25em] uppercase text-purple-400/70 mb-2">Portfolio</p>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2">Projects & <span className="gradient-text">Automation Work</span></h2>
-                    <p className="text-white/40 text-base">Click left/right cards to navigate</p>
+                    <p className="text-white/40 text-base hidden md:block">Click left/right cards to navigate</p>
+                    <p className="text-white/40 text-base md:hidden">Swipe left or right to navigate</p>
                 </motion.div>
 
                 {/* Carousel Container */}
