@@ -167,7 +167,7 @@ export default function SkillsSection() {
                 {/* Apple Dock */}
                 <motion.div
                     ref={containerRef}
-                    className="flex flex-wrap justify-center gap-3 sm:gap-5 md:gap-6 items-end h-[120px] md:h-[140px]"
+                    className="flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6 items-end h-auto min-h-[120px] md:h-[140px]"
                     initial={{ opacity: 0, y: 40 }}
                     animate={isVisible ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, delay: 0.2 }}
