@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, useScroll, useTransform, LayoutGroup } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Wrench, TrendingUp, AlertCircle, Lightbulb } from "lucide-react";
@@ -309,10 +309,11 @@ function MiniCard({ project, position, onClick }: { project: typeof projects[0];
     );
 }
 
-function MainCard({ project }: { project: typeof projects[0] }) {
+function MainCard({ project, isMobile }: { project: typeof projects[0], isMobile?: boolean }) {
     return (
         <motion.div
-            layoutId={`project-${project.id}`}
+            layoutId={isMobile ? undefined : `project-${project.id}`}
+            key={`main-${project.id}`}
             data-cursor="project"
             className="relative flex-shrink-0 w-full max-w-[320px] sm:w-[320px] h-auto min-h-[560px] sm:h-[560px] sm:max-h-[560px]"
             style={{
@@ -426,6 +427,15 @@ export default function ProjectsSection() {
     });
     const yBg = useTransform(scrollYProgress, [0, 1], [50, -50]);
 
+    const [isMobile, setIsMobile] = useState(true);
+
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 640);
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
     const goToPrev = () => {
         setActiveIndex((prev) => (prev > 0 ? prev - 1 : projects.length - 1));
     };
@@ -485,23 +495,27 @@ export default function ProjectsSection() {
                         onTouchMove={handleTouchMove}
                         onTouchEnd={handleTouchEnd}
                     >
-                        <div className="hidden sm:block flex-shrink-0">
-                            <MiniCard
-                                project={projects[prevIndex]}
-                                position="left"
-                                onClick={() => goToIndex(prevIndex)}
-                            />
+                        {!isMobile && (
+                            <div className="hidden sm:block flex-shrink-0">
+                                <MiniCard
+                                    project={projects[prevIndex]}
+                                    position="left"
+                                    onClick={() => goToIndex(prevIndex)}
+                                />
+                            </div>
+                        )}
+                        <div className="flex-shrink-0 w-full sm:w-auto flex justify-center">
+                            <MainCard project={projects[activeIndex]} isMobile={isMobile} />
                         </div>
-                        <div className="flex-shrink-0">
-                            <MainCard project={projects[activeIndex]} />
-                        </div>
-                        <div className="hidden sm:block flex-shrink-0">
-                            <MiniCard
-                                project={projects[nextIndex]}
-                                position="right"
-                                onClick={() => goToIndex(nextIndex)}
-                            />
-                        </div>
+                        {!isMobile && (
+                            <div className="hidden sm:block flex-shrink-0">
+                                <MiniCard
+                                    project={projects[nextIndex]}
+                                    position="right"
+                                    onClick={() => goToIndex(nextIndex)}
+                                />
+                            </div>
+                        )}
                     </div>
                     {/* Mobile nav dots */}
                     <div className="flex sm:hidden items-center justify-center gap-2 mt-4">
