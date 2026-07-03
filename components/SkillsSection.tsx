@@ -125,7 +125,7 @@ export default function SkillsSection() {
     };
 
     return (
-        <section id="skills" className="section-padding relative z-10 pb-16 md:pb-24">
+        <section id="skills" className="section-padding relative z-10 pb-24 md:pb-32">
             {/* Parallax background element */}
             <motion.div
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full pointer-events-none"

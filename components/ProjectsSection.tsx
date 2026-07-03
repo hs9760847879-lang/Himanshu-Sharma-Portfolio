@@ -473,7 +473,7 @@ export default function ProjectsSection() {
             </div>
 
             <div className="container mx-auto relative z-10">
-                <motion.div ref={headerRef} initial={{ opacity: 0, y: 30 }} animate={headerVisible ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-center mb-16 flex flex-col items-center">
+                <motion.div ref={headerRef} initial={{ opacity: 0, y: 30 }} animate={headerVisible ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-center mb-16 mt-4 md:mt-0 flex flex-col items-center">
                     <p className="text-sm font-semibold tracking-[0.25em] uppercase text-purple-400/70 mb-2">Portfolio</p>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2">Projects & <span className="gradient-text">Automation Work</span></h2>
                     <p className="text-white/40 text-base hidden md:block">Click left/right cards to navigate</p>

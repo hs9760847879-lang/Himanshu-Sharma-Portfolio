@@ -19,8 +19,14 @@
   margin: 0;
 }
 
-html, body {
-  overflow-x: hidden;
+html {
+  overflow-x: clip;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   width: 100%;
   margin: 0;
   padding: 0;
