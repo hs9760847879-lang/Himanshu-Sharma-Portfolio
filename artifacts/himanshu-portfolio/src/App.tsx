@@ -230,7 +230,7 @@ function Nav() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
   return <header className={`site-nav${scrolled ? ' scrolled' : ''}`}><div className="container nav-inner">
-    <a className="brand" href="#top" data-testid="link-brand">HIMANSHU <span>/</span> SHARMA</a>
+    <a className="brand" href="#top" data-testid="link-brand">HIMANSHU SHARMA</a>
     <nav className="nav-links" aria-label="Primary navigation">
       <a className="nav-link" href="#work" data-testid="link-work">Work</a>
       <a className="nav-link" href="#about" data-testid="link-about">About</a>
