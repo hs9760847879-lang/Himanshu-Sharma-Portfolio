@@ -3,6 +3,7 @@ import { ArrowUpRight, X } from 'lucide-react';
 import { type ReactElement } from 'react';
 import { type MouseEvent } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Bar, BarChart, Cell, LabelList, ResponsiveContainer, XAxis } from 'recharts';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
@@ -150,18 +151,48 @@ const projects: Project[] = [
   },
 ];
 
+type ChartDatum = { name: string; value: number; label: string };
+
+const trackerChartData: ChartDatum[] = [
+  { name: 'Before', value: 960, label: '~2 Days' },
+  { name: 'After', value: 30, label: '30 Min' },
+];
+
+const commissionChartData: ChartDatum[] = [
+  { name: 'Before', value: 480, label: 'Up to 1 Day' },
+  { name: 'After', value: 15, label: '<15 Min' },
+];
+
+const policyChartData: ChartDatum[] = [
+  { name: 'Completed', value: 62, label: '62%' },
+  { name: 'In Progress', value: 24, label: '24%' },
+  { name: 'Flagged', value: 14, label: '14%' },
+];
+
+function MiniBarChart({ data }: { data: ChartDatum[] }) {
+  return <ResponsiveContainer width="100%" height="100%">
+    <BarChart data={data} margin={{ top: 18, right: 4, bottom: 0, left: 4 }} barCategoryGap="30%">
+      <XAxis dataKey="name" tickLine={false} axisLine={false} tick={{ fontSize: 9, fontFamily: 'var(--app-font-mono)', fill: '#4c6b62' }} />
+      <Bar dataKey="value" radius={[2, 2, 0, 0]} isAnimationActive={false}>
+        {data.map((entry, index) => <Cell key={entry.name} fill={index % 2 === 0 ? '#4d8c84' : '#d0925d'} />)}
+        <LabelList dataKey="label" position="top" style={{ fontFamily: 'var(--app-font-mono)', fontSize: 9, fill: '#173b38' }} />
+      </Bar>
+    </BarChart>
+  </ResponsiveContainer>;
+}
+
 function Preview({ type }: { type: Project['preview'] }): ReactElement {
   if (type === 'tracker') {
-    return <div className="preview" data-testid="preview-tracker"><div className="preview-head"><span>TRACKER / CHECK</span><span>RUN 04</span></div><div className="preview-body"><div className="workflow"><div className="workflow-node">STAKEHOLDER<br />TRACKER</div><i className="workflow-line" /><div className="workflow-node">VALIDATION<br />LOGIC</div><i className="workflow-line" /><div className="workflow-node">CHECKED<br />OUTPUT</div></div><div className="bars"><b style={{ '--h': '38%' } as CSSProperties} /><b style={{ '--h': '65%' } as CSSProperties} /><b style={{ '--h': '48%' } as CSSProperties} /><b style={{ '--h': '78%' } as CSSProperties} /><b style={{ '--h': '60%' } as CSSProperties} /></div></div></div>;
+    return <div className="preview" data-testid="preview-tracker"><div className="preview-head"><span>TRACKER / CHECK</span><span>RUN 04</span></div><div className="preview-body"><div className="workflow"><div className="workflow-node">STAKEHOLDER<br />TRACKER</div><i className="workflow-line" /><div className="workflow-node">VALIDATION<br />LOGIC</div><i className="workflow-line" /><div className="workflow-node">CHECKED<br />OUTPUT</div></div><div className="bars"><MiniBarChart data={trackerChartData} /></div></div></div>;
   }
   if (type === 'commission') {
-    return <div className="preview" data-testid="preview-commission"><div className="preview-head"><span>BROWSER / AUTOMATION</span><span className="scrape-dot" />LIVE RUN</div><div className="preview-body"><div className="screen-lines"><i style={{ '--w': '89%' } as CSSProperties} /><i style={{ '--w': '72%' } as CSSProperties} /><i style={{ '--w': '94%' } as CSSProperties} /><i style={{ '--w': '54%' } as CSSProperties} /><i style={{ '--w': '81%' } as CSSProperties} /></div><div className="bars"><b style={{ '--h': '30%' } as CSSProperties} /><b style={{ '--h': '45%' } as CSSProperties} /><b style={{ '--h': '72%' } as CSSProperties} /><b style={{ '--h': '88%' } as CSSProperties} /></div></div></div>;
+    return <div className="preview" data-testid="preview-commission"><div className="preview-head"><span>BROWSER / AUTOMATION</span><span className="scrape-dot" />LIVE RUN</div><div className="preview-body"><div className="screen-lines"><i style={{ '--w': '89%' } as CSSProperties} /><i style={{ '--w': '72%' } as CSSProperties} /><i style={{ '--w': '94%' } as CSSProperties} /><i style={{ '--w': '54%' } as CSSProperties} /><i style={{ '--w': '81%' } as CSSProperties} /></div><div className="bars"><MiniBarChart data={commissionChartData} /></div></div></div>;
   }
   if (type === 'updates') {
     return <div className="preview" data-testid="preview-updates"><div className="preview-head"><span>COMMISSION / UPDATE</span><span>01 → 248</span></div><div className="preview-body"><div className="split-preview"><div><strong>MANUAL PROCESS</strong>Open property<br />Find commission<br />Update value<br />Save<br />Repeat</div><div><strong>AUTOMATED PROCESS</strong>Load tracker<br />Run automation<br />Browser executes<br />Verify completion</div></div></div></div>;
   }
   if (type === 'policy') {
-    return <div className="preview" data-testid="preview-policy"><div className="preview-head"><span>POLICY / OVERVIEW</span><span>ORGANISATION</span></div><div className="preview-body"><div className="bars"><b style={{ '--h': '52%' } as CSSProperties} /><b style={{ '--h': '70%' } as CSSProperties} /><b style={{ '--h': '42%' } as CSSProperties} /><b style={{ '--h': '86%' } as CSSProperties} /><b style={{ '--h': '64%' } as CSSProperties} /></div><div className="screen-lines"><i style={{ '--w': '32%' } as CSSProperties} /><i style={{ '--w': '61%' } as CSSProperties} /><i style={{ '--w': '43%' } as CSSProperties} /></div></div></div>;
+    return <div className="preview" data-testid="preview-policy"><div className="preview-head"><span>POLICY / OVERVIEW</span><span>ORGANISATION</span></div><div className="preview-body"><div className="bars"><MiniBarChart data={policyChartData} /></div><div className="screen-lines"><i style={{ '--w': '32%' } as CSSProperties} /><i style={{ '--w': '61%' } as CSSProperties} /><i style={{ '--w': '43%' } as CSSProperties} /></div></div></div>;
   }
   if (type === 'scraper') {
     return <div className="preview" data-testid="preview-scraper"><div className="preview-head"><span>POLICY / EXTRACT</span><span>GEMINI</span></div><div className="preview-body"><div className="scrape-preview"><div className="scrape-source">/accommodation<br /><br />cooling_off_period<br />no_visa_no_pay<br />security_deposit<br />early_termination</div><div className="scrape-result"><b>STRUCTURED OUTPUT</b><span className="scrape-dot" />Cancellation<br /><span className="scrape-dot" />Payment<br /><span className="scrape-dot" />Validated categories</div></div></div></div>;
