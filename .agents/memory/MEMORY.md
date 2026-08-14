@@ -1,0 +1,1 @@
+- [PDF processing on Nix](pdf-processing.md) — use a workspace uv virtual environment when PyMuPDF is needed because the system Python is externally managed.

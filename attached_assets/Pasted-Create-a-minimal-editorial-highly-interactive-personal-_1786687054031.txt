@@ -1,0 +1,1019 @@
+Create a **minimal, editorial, highly interactive personal portfolio website** for **Himanshu Sharma**, an Ecommerce & Catalog Operations professional specializing in **AI automation, catalog optimization, workflow automation, data quality, and operational efficiency**.
+
+The portfolio should feel like a **designer-crafted personal website**, not a SaaS landing page and not a generic developer portfolio. The visual language should combine **editorial typography, restrained layouts, subtle motion, and interactive case studies**.
+
+Use the provided Figma portfolio reference as the **visual inspiration for layout, spacing, typography hierarchy, interactions, case-study presentation, and overall premium aesthetic**, but do not copy it directly. Create an original design with a similar level of polish.
+
+---
+
+# 1. PERSONAL BRAND
+
+Name:
+**Himanshu Sharma**
+
+Primary Title:
+**Ecommerce & Catalog Operations | AI Automation**
+
+Alternative supporting line:
+**I turn repetitive ecommerce operations into intelligent, automated workflows.**
+
+Hero statement:
+
+> I build AI-powered systems that automate catalog operations, commission management, policy workflows, data verification, and inventory quality at scale.
+
+Add a small credibility statement:
+
+**3+ Years Experience · 1,500+ Listings Optimized · 85% Manual Workload Reduction · AI Automation**
+
+Resume background:
+
+* Catalog Management Executive at Amber Student
+* Catalog Management Intern at Amber Student
+* Ecommerce/catalog operations
+* Product listing optimization
+* Data QA and catalog hygiene
+* Stakeholder management
+* Workflow automation
+* AI prompt-based automation
+
+The visual tone should communicate:
+**Operational expert who builds automation**, not simply a traditional software developer.
+
+---
+
+# 2. WEBSITE STYLE — IMPORTANT
+
+The primary design principle is:
+
+**Less interface. More personality. More interaction.**
+
+Do NOT generate the usual AI portfolio structure with a hero, eight boxed sections, glowing gradients, skill badges, generic cards, or a dashboard-looking interface.
+
+Use a **minimal editorial art-direction** inspired by high-end independent portfolios, digital studios, and product-design case studies.
+
+Visual rules:
+
+* Off-white, warm white, or near-black background
+* One restrained accent colour only
+* Large typography with strong hierarchy
+* Lots of empty space
+* Thin rules and subtle dividers
+* Mostly flat surfaces
+* Very limited rounded containers
+* No unnecessary glassmorphism
+* No excessive gradients
+* No giant decorative illustrations
+* No stock imagery
+* No generic AI graphics
+* No percentage badges everywhere
+* No giant skill grids
+* No excessive cards
+
+Use a typography-led composition where text itself becomes part of the visual design.
+
+The site should feel **calm at first glance, but surprisingly interactive once explored**.
+
+Interactions should be subtle and purposeful:
+
+* magnetic or animated text links
+* project previews that respond to cursor movement
+* horizontal scroll moments
+* image/text transitions
+* masked text reveals
+* smooth page transitions
+* hover-based metadata reveals
+* elegant loading transitions
+
+Motion should never feel like decoration for decoration's sake. Every interaction should help communicate the work.
+
+---
+
+# 3. NAVIGATION
+
+Keep navigation extremely small.
+
+Top-left:
+**HIMANSHU SHARMA**
+
+Top-right:
+**WORK**   **ABOUT**   **CONTACT**
+
+Use a transparent or text-only navigation. Avoid a large navigation bar.
+
+On scroll, let the navigation subtly change position or scale, but keep it almost invisible.
+
+Do not create a separate menu item for every portfolio section.
+
+---
+
+# 4. HERO SECTION
+
+Do NOT use the traditional centered portfolio hero.
+
+Create an asymmetric editorial opening with the following structure:
+
+Small top label:
+**ECOMMERCE / AUTOMATION / AI**
+
+Large left-aligned headline:
+
+**I turn repetitive ecommerce work into systems.**
+
+Secondary line:
+**Catalog operations × AI automation × process design**
+
+At the bottom of the hero, place a small, understated introduction:
+
+> I work inside high-volume ecommerce operations and build tools that make repetitive work faster, cleaner, and easier to manage.
+
+Do not put four metric cards in the hero.
+
+Instead, show one subtle line near the bottom:
+
+**3+ years / 1,500+ listings / 85% workload reduction**
+
+Make the hero interactive through typography, cursor movement, or a subtle text distortion/reveal effect.
+
+The first screen should feel almost like a printed editorial cover before the interaction begins.
+
+---
+
+# 5. ABOUT / INTRODUCTION
+
+Do not create three generic service cards.
+
+Instead, create one oversized editorial statement:
+
+**I sit between operations and technology.**
+
+Then reveal the supporting copy progressively as the visitor scrolls:
+
+> My work starts with repetitive operational problems — checking trackers, creating commissions, updating data, researching policies, detecting duplicates, and verifying information.
+
+> I map the process, find the bottleneck, and build an automation around it.
+
+Use a narrow side column with three words that react to scrolling:
+
+**OPERATIONS**
+**AUTOMATION**
+**INTELLIGENCE**
+
+Keep this section mostly typographic.
+
+---
+
+# 6. FEATURED PROJECTS — MAKE THIS THE EXPERIENCE
+
+This is the centrepiece of the website.
+
+Do NOT use a grid of eight cards.
+
+Create a **vertical editorial project index** where projects appear one at a time and occupy most of the viewport.
+
+Each project should have:
+
+* a large project number
+* a short category
+* oversized project title
+* one-line outcome
+* small technology metadata
+* an interactive visual preview
+
+On hover, the visual preview should move subtly with the cursor.
+
+On click, expand into a full-screen case study or fluid overlay rather than navigating to a generic new page.
+
+Use only the strongest 5 projects in the main flow:
+
+01 Automated Tracker Checking
+02 Automated New Commission Creation
+03 Automated Commission Updates
+04 Policy Tracker
+05 AI Policy Scraper
+
+Place the remaining projects — Duplicate Property Detection, Commission Expiry Alert, and Data Verification Agent — in a compact **More Experiments** section near the end.
+
+The project section should feel closer to an **interactive case-study archive** than a project gallery.
+
+---
+
+# PROJECT 01
+
+## Automated Tracker Checking
+
+Category:
+
+**WORKFLOW AUTOMATION**
+
+Headline:
+
+**From 2 Days of Manual Checking to ~30 Minutes**
+
+Problem:
+
+Commission trackers received from stakeholders required extensive manual checking and validation. A small batch of four trackers could take approximately two days to review.
+
+Solution:
+
+Built an automated tracker-checking system using Google Apps Script that processes commission tracker data, performs validation and checking logic, and reduces repetitive manual review.
+
+Impact:
+
+**2 Days → ~30 Minutes**
+
+Technology:
+
+JavaScript
+Google Apps Script
+Google Sheets API / SpreadsheetApp
+AI-assisted development
+
+Show an animated workflow:
+
+**Stakeholder Tracker → Automated Validation → Error Detection → Checked Output**
+
+Include a large impact badge:
+
+**~95%+ reduction in processing time**
+
+Do not claim this percentage as an official measured metric; display it as an approximate derived impact from the stated time reduction.
+
+Add a case-study subsection:
+
+### The Challenge
+
+Large trackers had to be reviewed manually, consuming significant team capacity.
+
+### The Approach
+
+Automate repetitive comparison, validation and checking operations inside Google Sheets.
+
+### The Result
+
+A workflow that previously took days can now be processed in roughly 30 minutes.
+
+---
+
+# PROJECT 02
+
+## Automated New Commission Creation
+
+Category:
+
+**PROCESS AUTOMATION**
+
+Headline:
+
+**Bulk Commission Creation in Under 15 Minutes**
+
+Problem:
+
+Creating large numbers of new commissions manually could take an agent anywhere from four hours to an entire working day.
+
+Solution:
+
+Built a Python-based automation workflow running locally with a headed browser using Puppeteer.
+
+The system automates repetitive browser-based commission creation tasks.
+
+Impact:
+
+**4–8+ Hours → <15 Minutes**
+
+Technology:
+
+Python
+Puppeteer
+Browser Automation
+Local Hosting
+AI-assisted development
+
+Visual workflow:
+
+**Input Tracker → Data Processing → Browser Automation → Commission Creation → Completion**
+
+Add a metric:
+
+**<15 min processing time**
+
+Case-study structure:
+
+### Problem
+
+High-volume commission creation required repetitive manual browser actions.
+
+### Automation
+
+Python controls a headed browser and executes the required workflow automatically.
+
+### Outcome
+
+Large batches can be completed in minutes instead of several hours.
+
+---
+
+# PROJECT 03
+
+## Automated Commission Updates
+
+Category:
+
+**BROWSER AUTOMATION**
+
+Headline:
+
+**Bulk Commission Updates Without Manual Repetition**
+
+Problem:
+
+Commission updates received from stakeholders required agents to repeatedly navigate systems and update large quantities of data manually.
+
+Solution:
+
+Developed a Python automation workflow using Puppeteer and a headed browser to automate repetitive commission update operations.
+
+Impact:
+
+**4–8+ Hours → <15 Minutes**
+
+Technology:
+
+Python
+Puppeteer
+Browser Automation
+Local Hosting
+
+Visual:
+
+Show a split-screen comparison:
+
+LEFT:
+Manual Process
+
+* Open property
+* Find commission
+* Update value
+* Save
+* Repeat hundreds of times
+
+RIGHT:
+Automated Process
+
+* Load tracker
+* Run automation
+* Browser executes workflow
+* Verify completion
+
+Use a visual transformation:
+
+**Hundreds of repetitive actions → One automated workflow**
+
+---
+
+# PROJECT 04
+
+## Policy Tracker
+
+Category:
+
+**OPERATIONS PLATFORM**
+
+Headline:
+
+**One Operating Dashboard for Organisation-Wide Policy Tracking**
+
+Problem:
+
+Policy framing tasks across multiple stakeholders and properties were difficult to track centrally.
+
+Solution:
+
+Built a web-based policy tracking platform that provides organisation-wide visibility into policy progress.
+
+Key capabilities:
+
+* Login and authentication
+* Login approval
+* Policy tracking
+* Provider tracking
+* Property-level status
+* Organisation-wide summary
+* Dashboard analytics
+* Data import
+* Progress monitoring
+
+Technology:
+
+JavaScript / Node.js
+HTML / CSS
+PostgreSQL
+Supabase
+Serverless APIs
+Chart.js
+bcryptjs
+JWT
+Git
+
+Architecture visual:
+
+**Frontend → Serverless API → Supabase PostgreSQL**
+
+Display dashboard metrics such as:
+
+**Properties With Policies**
+
+**Properties Pending**
+
+**Providers**
+
+**Completion Rate**
+
+Make these animated dashboard mockups rather than claiming exact numbers unless provided.
+
+Case study:
+
+### Problem
+
+Policy progress was distributed across stakeholders and difficult to monitor.
+
+### Solution
+
+Built a centralised authenticated tracking platform.
+
+### Outcome
+
+Teams can monitor policy progress, identify gaps and view organisation-level summaries from one system.
+
+---
+
+# PROJECT 05
+
+## AI Policy Scraper
+
+Category:
+
+**AI × WEB AUTOMATION**
+
+Headline:
+
+**Turn Manual Policy Research Into Structured Data**
+
+Problem:
+
+Student accommodation policy research required manually visiting websites, navigating subpages and locating specific cancellation/payment policies.
+
+Solution:
+
+Built a policy scraping system capable of following required sub-links, extracting relevant website content and using AI to structure policies into predefined categories.
+
+Core extraction categories:
+
+### Cancellation Policies
+
+* Cooling Off Period
+* No Visa No Pay
+* No Place No Pay
+* Covid-19 Policy
+* University Course Cancellation / Modification
+* Early Termination
+* Delayed Arrival
+* Replacement Tenant
+* Deferring Studies
+* University Intake Delayed
+* No Questions Asked
+* Extenuating Circumstances
+* Other Cancellation Policies
+
+### Payment Policies
+
+* Booking Deposit
+* Security Deposit
+* Payment Instalment Plan
+* Mode of Payment
+* Guarantor Requirement
+* Fully Refundable Holding Fee
+* Platform Fee
+* Additional Fees
+
+Technology:
+
+TypeScript
+React
+Tailwind CSS
+Express
+Cheerio
+node-html-parser
+Native Fetch
+Google Gemini AI
+Zod
+Pino
+esbuild
+
+Fallback scraping strategies:
+
+**Direct Website → Jina Reader → Cached Sources → Wayback / Search Sources**
+
+AI processing:
+
+**Scraped Text → Gemini → Structured Policy Categories → Validated Output**
+
+Make this project visually impressive because it demonstrates both engineering and domain intelligence.
+
+---
+
+# PROJECT 06
+
+## Duplicate Property Detection
+
+Category:
+
+**DATA QUALITY AUTOMATION**
+
+Headline:
+
+**Automated Detection of Duplicate Properties**
+
+Problem:
+
+Duplicate property entries caused data inconsistencies and created operational inefficiencies during inventory management.
+
+Solution:
+
+Built an automated Google Sheets system using matching logic to identify duplicate properties and visually highlight them.
+
+Technology:
+
+JavaScript
+Google Apps Script
+SpreadsheetApp
+Google Sheets
+
+Visual:
+
+Show a spreadsheet-style interface where duplicate rows automatically become highlighted.
+
+Workflow:
+
+**Property Data → Matching Logic → Duplicate Detection → Visual Highlighting**
+
+---
+
+# PROJECT 07
+
+## Commission Expiry Alert System
+
+Category:
+
+**PROACTIVE AUTOMATION**
+
+Headline:
+
+**Never Miss a Commission Expiry**
+
+Problem:
+
+Missed commission expiry dates could create operational and revenue-related issues.
+
+Solution:
+
+Created an automation that monitors commission end dates and automatically sends email alerts for commissions approaching expiry.
+
+Alert threshold:
+
+**3 Days Before Expiry**
+
+Technology:
+
+Google Sheets
+Google Apps Script
+Email Notifications
+Date Logic
+
+Visual:
+
+Commission expiry timeline:
+
+**Today → 1 Day → 2 Days → 3 Days → ALERT**
+
+Show an automated email notification mockup.
+
+---
+
+# PROJECT 08
+
+## Data Verification Agent
+
+Category:
+
+**AI AGENT / DATA INTELLIGENCE**
+
+Headline:
+
+**Automated Multi-Source Data Verification**
+
+Problem:
+
+Verifying information across multiple sources was slow and inconsistent when performed manually.
+
+Solution:
+
+Built an n8n-powered intelligent verification agent that performs web searches, collects information, validates data and applies matching logic.
+
+Workflow:
+
+**Input → Google Search → Source Collection → AI Validation → Data Matching → Verified Result**
+
+Technology:
+
+n8n
+AI APIs
+Web Search
+Data Matching
+Automation
+
+Describe this as an early-stage intelligent data verification workflow rather than overstating it as a fully autonomous AI system.
+
+---
+
+# 7. IMPACT SECTION
+
+Create a dramatic numerical section titled:
+
+**The Impact of Automation**
+
+Large animated numbers:
+
+**85%**
+Manual workload reduction
+
+**1,500+**
+Listings improved
+
+**2 Days → 30 Min**
+Tracker checking
+
+**Hours → <15 Min**
+Bulk commission workflows
+
+Add the explanation:
+
+> Automation is not about replacing the process. It is about removing repetitive work so people can focus on decisions, quality and exceptions.
+
+---
+
+# 8. PROCESS SECTION
+
+Title:
+
+**How I Build Automation**
+
+Create a 5-step horizontal process.
+
+### 01 — Find the Bottleneck
+
+Identify repetitive, high-volume work.
+
+### 02 — Map the Process
+
+Break the operation into inputs, decisions and outputs.
+
+### 03 — Build the Workflow
+
+Use scripts, APIs, AI models or browser automation.
+
+### 04 — Validate
+
+Test edge cases, exceptions and output quality.
+
+### 05 — Operationalise
+
+Make the workflow usable by the team and document it.
+
+Add subtle animated lines connecting every step.
+
+---
+
+# 9. SKILLS
+
+Title:
+
+**My Toolkit**
+
+Organise skills into visual groups.
+
+### Ecommerce
+
+Catalog Management
+PDP Optimization
+Listing Content
+Inventory Management
+Pricing Accuracy
+Commission Management
+Data QA
+Catalog Hygiene
+
+### Automation
+
+Google Apps Script
+Python
+JavaScript
+TypeScript
+Node.js
+Puppeteer
+n8n
+Browser Automation
+
+### AI
+
+LLM Workflows
+Prompt Engineering
+Google Gemini
+AI-assisted Automation
+Data Extraction
+AI Agents
+
+### Data / Platforms
+
+Google Sheets
+PostgreSQL
+Supabase
+REST APIs
+Chart.js
+Git
+
+Make skills appear as interactive pills/cards rather than a boring list.
+
+---
+
+# 10. EXPERIENCE
+
+Create a clean timeline.
+
+### Catalog Management Executive
+
+**Amber Student**
+December 2023 – Present
+
+Highlight:
+
+* Improved content quality across 1,500+ listings
+* Added images, videos, amenities, VR tours and FAQs
+* Reduced manual workload by 85% using AI-driven automation
+* Coordinated promotional campaigns
+* Tracked website traffic and performance data
+* Managed stakeholder portfolios
+* Audited pricing, descriptions and media
+* Led a team as sublead
+* Documented automation workflows
+* Trained team members
+
+### Catalog Management Intern
+
+**Amber Student**
+June 2023 – December 2023
+
+Highlight:
+
+* Created and maintained property listings
+* Drafted product descriptions
+* Sourced images
+* Maintained pricing and inventory records
+* Supported commission updates
+* Supported promotional offers
+
+Keep this section visually elegant and compact.
+
+---
+
+# 11. EDUCATION
+
+### Bachelor of Science — Mathematics
+
+R.S.S. (P.G.) College, Hapur
+
+2020 – 2023
+
+### Diploma in Information Technology
+
+Lal Bahadur Shastri Computer Institute, Hapur
+
+2021 – 2022
+
+Add small visual tags:
+
+**Mathematics + Technology + Operations**
+
+---
+
+# 12. CASE STUDY INTERACTION
+
+When the user clicks any project, open a detailed case-study view or expandable full-screen panel.
+
+Each case study should contain:
+
+**01 — Context**
+
+What was happening before the automation?
+
+**02 — Problem**
+
+What made the process slow or inefficient?
+
+**03 — Solution**
+
+What was built?
+
+**04 — Technology**
+
+What technologies were used?
+
+**05 — Workflow**
+
+Show a visual process diagram.
+
+**06 — Impact**
+
+Show measurable before/after results.
+
+**07 — Key Learning**
+
+Explain what the project demonstrates about Himanshu's ability.
+
+Make the transitions smooth and premium.
+
+---
+
+# 13. "WHAT MAKES MY WORK DIFFERENT"
+
+Create a section with the statement:
+
+> **I don't start with technology. I start with the operational problem.**
+
+Then explain:
+
+Many automation projects start with a tool.
+
+My approach starts with:
+
+**Process → Bottleneck → Logic → Automation → Validation → Impact**
+
+Highlight that the projects combine:
+
+* real operational problems
+* business process understanding
+* AI/LLM capabilities
+* browser automation
+* data validation
+* workflow design
+* measurable efficiency improvements
+
+---
+
+# 14. CONTACT SECTION
+
+Large closing statement:
+
+**Have a repetitive workflow that should be automated?**
+
+Supporting text:
+
+> Let's turn manual operational work into a scalable system.
+
+Buttons:
+
+**LinkedIn ↗**
+
+**Email ↗**
+
+**View Resume ↓**
+
+Email:
+[hs1385944@gmail.com](mailto:hs1385944@gmail.com)
+
+LinkedIn:
+linkedin.com/in/himanshu-sharma-814785250
+
+Location:
+Uttar Pradesh, India
+
+Phone:
+8650226021
+
+---
+
+# 15. FOOTER
+
+HIMANSHU SHARMA
+
+**Ecommerce Operations × AI Automation**
+
+Links:
+
+Work
+About
+Experience
+Contact
+LinkedIn
+
+Footer text:
+
+© 2026 Himanshu Sharma. Built around real-world automation and ecommerce operations.
+
+---
+
+# 16. VISUAL DETAILS
+
+Use subtle motion throughout the website.
+
+Hero:
+
+* animated text reveal
+* floating metrics
+* subtle cursor interaction
+
+Project cards:
+
+* image/mockup zoom on hover
+* technology tags animate
+* impact number counter
+* arrow movement
+
+Dashboard project:
+
+* animated charts
+
+Automation projects:
+
+* animated workflow lines
+
+Policy scraper:
+
+* simulated browser scraping animation
+* text flowing into structured policy cards
+
+Commission automation:
+
+* simulated browser automation sequence
+
+Duplicate detection:
+
+* spreadsheet rows highlighting duplicates
+
+Expiry alerts:
+
+* countdown / timeline animation
+
+Data verification:
+
+* source nodes connecting into a verified result
+
+---
+
+# 17. IMPORTANT CONTENT RULES
+
+Do not invent employers, awards, certifications, clients, revenue figures, users, traffic numbers or project metrics.
+
+Do not claim that all projects are production software used organisation-wide unless explicitly stated.
+
+Use phrases such as:
+
+* "Built"
+* "Developed"
+* "Automated"
+* "Designed"
+* "Reduced processing time"
+* "AI-assisted"
+* "Workflow automation"
+
+Where exact impact is given, display it prominently.
+
+Where an impact percentage is mathematically derived, clearly label it as an approximate/derived figure.
+
+The tone should be confident but credible.
+
+---
+
+# 18. OVERALL PORTFOLIO POSITIONING
+
+The final portfolio should make a recruiter think:
+
+**"This person understands ecommerce operations deeply and can use AI, automation and technology to dramatically improve them."**
+
+The website should position Himanshu for roles such as:
+
+* Ecommerce Operations
+* Catalog Management
+* Ecommerce Automation
+* Product Operations
+* Catalog Operations
+* Marketplace Operations
+* Process Automation
+* AI Operations
+* AI Workflow Automation
+* Business Operations / Automation
+
+The strongest narrative throughout the website should be:
+
+**UNDERSTAND THE OPERATION → FIND THE BOTTLENECK → BUILD THE AUTOMATION → MEASURE THE IMPACT**
+
+Make the portfolio feel like a **high-end case-study driven professional portfolio**, not a generic resume website.

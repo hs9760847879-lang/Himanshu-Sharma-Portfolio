@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Himanshu Sharma — Ecommerce Operations & AI Automation"
+description = "An editorial personal portfolio for Himanshu Sharma, showing how ecommerce operations expertise becomes practical AI-powered automation through interactive case studies."
+version = "1.0.0"
+id = "artifacts/himanshu-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21354
+
+[services.development]
+run = "pnpm --filter @workspace/himanshu-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/himanshu-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/himanshu-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21354"
+BASE_PATH = "/"
