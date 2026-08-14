@@ -278,7 +278,7 @@ function Home() {
       <div className="hero-grid">
         <div className="hero-side"><div className="eyebrow">Ecommerce / Automation / AI</div><span className="vertical-label mono">Operational systems, made clearer</span></div>
         <div className="hero-copy">
-          <h1 className="hero-title" id="hero-title">I turn repetitive ecommerce work into <em>systems.</em></h1>
+          <h1 className="hero-title" id="hero-title">I turn repetitive OPERATIONS work into <em>systems.</em></h1>
           <div className="hero-subgrid"><p>Catalog operations × AI automation × process design</p><div className="hero-meta"><div><span>3+</span><br />years experience</div><div><span>1,500+</span><br />listings optimized</div><div><span>85%</span><br />manual workload reduction</div></div></div>
         </div>
       </div>
